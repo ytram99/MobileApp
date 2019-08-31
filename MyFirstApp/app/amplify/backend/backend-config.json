@@ -1,0 +1,26 @@
+{
+    "api": {
+        "myfirstapp": {
+            "service": "AppSync",
+            "providerPlugin": "awscloudformation",
+            "output": {
+                "securityType": "API_KEY"
+            }
+        }
+    },
+    "auth": {
+        "cognitof29624c5": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "dependsOn": []
+        }
+    },
+    "notifications": {
+        "MyFirstAppfgQqn-dev": {
+            "service": "Pinpoint",
+            "channels": [
+                "FCM"
+            ]
+        }
+    }
+}
